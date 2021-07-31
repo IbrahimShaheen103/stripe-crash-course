@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reveiws",
+      "handler": "reveiw.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reveiws/count",
+      "handler": "reveiw.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reveiws/:id",
+      "handler": "reveiw.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reveiws",
+      "handler": "reveiw.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reveiws/:id",
+      "handler": "reveiw.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reveiws/:id",
+      "handler": "reveiw.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

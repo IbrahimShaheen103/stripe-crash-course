@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reveiws",
+  "info": {
+    "name": "reveiw",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "max": 10,
+      "min": 1
+    },
+    "categories": {
+      "collection": "category",
+      "via": "reveiws",
+      "dominant": true
+    }
+  }
+}
